@@ -1,0 +1,487 @@
+
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	font-size: 13px;
+	font-family: arial;
+	margin:0;
+	
+	line-height: 30px !important;
+}
+a,a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	list-style: none;
+}
+header{
+	background-color: #d7242a;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 50;
+}
+nav>ul{
+	
+	margin:0;
+}
+nav>ul>li{
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+.section-container{
+	padding:6em 0em; 
+}
+.kkfc-btn{
+	background-color:#d7242a ;
+	color: #fff;
+	padding: 1em;
+	border-radius: 5px;
+	border: none;
+}
+.kkfc-btn:hover{
+	background-color: #8a0c10;
+	cursor: pointer;
+
+}
+
+/*remove blur effect due to bootstrap 4 slider */
+
+.carousel-item {
+    -webkit-backface-visibility: unset!important;
+    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: unset!important;
+    font-smoothing:antialiased;
+}
+
+
+/*styling mobile menu */
+
+.mobile-menu{
+	display: none;
+	position: relative;
+	z-index: 99;
+}
+
+#topMenu{
+	position: relative;
+	z-index: 99;
+	padding: 10px 0px;
+	background-color:#0c0909;
+	text-transform: uppercase;
+}
+#topMenu ul{
+	padding: 20px 75px;
+}
+#topMenu ul li{
+	padding: 20px 0px;
+	border-bottom: 1px solid #ffffff4a;
+}
+#topMenu ul li a,#topMenu ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu-toggler{
+	float: right;
+	font-size: 24px;
+	position: absolute;
+	right: 40px;
+	top:30px;
+	color:#fff;
+}
+.menu-toggler:hover{
+	cursor: pointer;
+}
+.cart{
+	float: right;
+	font-size: 24px;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	color:#fff;
+}
+
+.update-cart{
+	width: 50%;
+}
+
+.cart-update-form,.cart-remove-form{
+	display: inline;
+}
+.cart-btn{
+	background-color: #d7242a;
+	color: #fff;
+	border: none;
+	border-radius: 5px; 
+}
+.cart-btn:hover{
+	cursor: pointer;
+	background-color: #8a0c10;
+}
+
+.cart-count{
+	position: relative;
+	top: -5px;
+}
+
+/*styling start-order-module */
+
+.start-order-module{
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	top: 94px;
+	z-index: 49;
+	width: 100%;
+	background-color: #fff;
+	font-family: oswald;
+	border-bottom: solid 1px #960a0a4a;
+}
+.start-order-module a{
+	display: inline-block;
+}
+
+.start-order-heading{
+	background-color: #fff;
+	font-size: 40px;
+	margin-right: 1.5em;
+	position: relative;
+	top:-5px;
+}
+.delivery-btn,#order-type-delivery{
+	background-color: #d7242a;
+	
+}
+.pickup-btn,#order-type-pickup{
+	background-color: #006991;
+			
+}
+.pickup-btn,.delivery-btn{
+	width: 130px;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+.or-div{
+	display: inline-block;
+    position: relative;
+   	bottom: 15px;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin:0px 20px;
+}
+/*styling order type page */
+.order-type{
+	text-align: center;
+}
+
+
+#order-type-delivery,#order-type-pickup{
+	padding: 25px 20px;
+
+	width: 215px;
+	
+	display: inline-block;
+}
+#order-type-delivery:hover{
+
+	background-color: #8e0509;
+
+}
+#order-type-pickup:hover{
+	background-color: #045675;
+}
+.separator{
+	font-size: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+
+/* styling main content*/
+
+main{
+	margin-top: 187px;
+}
+
+
+
+
+/*styling slider*/
+.slider{
+	justify-content: center;
+    background-color: #731313;
+}
+
+/*foodSlider- small slider below about KKFC */
+#foodSlider .carousel-indicators li{
+	background-color: #fff;
+	border: 2px solid #9e9e9e7d;
+	top: 55px;
+    width: 10px;
+    height: 10px;
+    margin: 0px 10px;
+}
+#foodSlider .carousel-indicators .active{
+	border: 2px solid #d7242a;
+}
+
+/*styling special offers section */
+
+#specialOffers>span:after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 75%;
+	background-color: #9e9e9e40;
+}
+
+
+
+/*styling menu */
+
+.tabpanel {
+	background-color: #f9f9f9;
+}
+.tabpanel .row .col-sm-3{
+	padding: 0px 5px;
+}
+.tabpanel .card .card-body{
+	padding: 10px 0px 0px 0px;
+}
+.tabpanel .card .card-body .order-now-btn{
+	display: block;
+	border-radius: 0;
+	font-size: 14px;
+	background-color: #d7242a;
+	color: #fff;
+}
+.tabpanel .card .card-body .order-now-btn:hover{
+	background-color:#8a0a0e;
+	cursor: pointer;
+}
+.tabpanel ul .active{
+	background-color:#8a0a0e 
+}
+.tabpanel ul li{
+
+	background-color:#d7242a; 
+	border-bottom: 1px solid #fff;
+}
+.tabpanel ul li a{
+	color: #fff;
+	padding: 10px;
+	display: block;
+}
+
+.tab-content{
+	background-color: #f9f9f9;
+	padding: 5px;
+}
+
+.tabpanel ul li:hover{
+	background-color:#8a0a0e;
+	cursor: pointer;
+}	
+.hide{
+	display: none;
+}
+.card{
+	border:none;
+}
+.card-text,.card-title{
+	font-size: 14px;
+	color: #444444;
+}
+
+
+/*styling single detail page */
+
+.product-detail{
+	background-color:#f9f9f9; 
+}
+
+.order-quantity{
+	width: 50px;
+
+}
+.add-to-order-btn{
+	background-color: #f31c0c;
+    color: #fff;
+    border: none;
+    margin: 0px 0px 0px 10px;
+    position: relative;
+    top: -2px;
+    padding: 5px 50px;
+}
+.add-to-order-btn:hover{
+	background-color: #d7242a;
+	cursor: pointer;
+}
+
+/*styling footer*/
+footer{
+	
+	padding: 5em 0em;
+	background-color: #2e3033;
+	font-weight: 400;
+}
+footer ul {
+	padding: 0px;
+	margin: 5px 5px 5px 0px;
+}
+footer ul li{
+	padding-bottom: 10px;
+}
+footer h6{
+	color: #fff;
+	position: relative;
+	margin-bottom: 2.5em;
+}
+footer h6:after,footer h6:before{
+	content: "";
+	display: block;
+ 	position: absolute;
+	width: 70px;
+	height: 1px;
+	bottom: -15px;
+	background-color: #dc3522;
+}
+footer h6:after{
+	left: 10px;
+	bottom: -18px;
+}
+footer a {
+	color: #777;
+}
+footer a:hover{
+	color: #fff;
+}
+footer a, footer a:hover{
+	text-decoration:none;
+}
+
+/*contact page details */
+
+.box-data{
+  	font-size: 20px;
+ 	padding: 20px 10px;
+  }
+  
+.box-icon{
+  	position: absolute;
+  	font-size: 1.5em;
+  	text-align: center;
+   	box-shadow: inset 0px 0px 0px 2px #fff;
+   	height: 60px;
+   	width: 60px;
+  	border-radius: 50px;
+  }	
+  .box-icon i{
+  	position: relative;
+  	top: 15px;
+  }
+  .box-info{
+  	display: inline;
+  	position: relative;
+  	left: 90px;
+  	
+  }
+  .contact-form>h3{
+  	color: #ff0000;
+  }
+  .contact-details>h3,.contact-form>h3{
+ 	margin-bottom: 2em;
+ 	position: relative;
+ 	left: 0px;
+ 	font-weight: 400;
+  }
+
+  .contact-details>h3::after,.contact-form>h3::after{
+  	content: "";
+  	position: relative;
+  	top: 13px;
+  	height: 1px;
+  	display: block;
+  	background-color: #fff;
+  	width: 150px;
+  }
+  .contact-details>h3::before,.contact-form>h3::before{
+  	content: "";
+  	position: relative;
+  	top: 50px;
+  	height: 1px;
+  	display: block;
+  	background-color: #fff;
+  	width: 150px;
+  }
+  .contact-form>h3::after,.contact-form>h3::before{
+  	background-color: red;
+  }
+
+/*privacy policy */
+.privacy-policy ul{
+	list-style-type: disc;
+}
+
+/* payment options */
+
+.payment-gateway-section{
+	padding: 20px;
+	border: 1px solid rgb(0,0,0,0.3);
+	text-align: center;
+}
+.payment-form{
+	display: inline-block;
+	margin-left: 1.5em;
+}
+.payment-option-header{
+	display: inline-block;
+	font-family: roboto;
+    position: relative;
+    top: 5px;
+}
+/*media queries for responsiveness */
+
+@media only screen and (max-width: 900px){
+	.mobile-menu{
+		display: block;
+	}
+	.menu{
+		display: none;
+		}
+	}
+@media only screen and (max-width: 768px){
+	.start-order-heading{
+		display: block;
+		margin:0;
+		font-size: 24px;
+		}
+	.or-div{
+		margin: 0;
+		z-index: 10;
+		}
+	.pickup-btn,.delivery-btn{
+		border-radius: 0;
+		font-size: 16px;
+		position: relative;
+		}
+	.pickup-btn{
+		left: -20px;
+		}
+	.delivery-btn{
+		right: -20px;
+		}
+	}

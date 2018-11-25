@@ -1,0 +1,330 @@
+
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	font-size: 13px;
+	font-family: arial;
+	margin:0;
+	
+	line-height: 30px !important;
+}
+a,a:hover{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	list-style: none;
+}
+header{
+	background-color: #d7242a;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 50;
+}
+nav>ul{
+	
+	margin:0;
+}
+nav>ul>li{
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+.section-container{
+	padding:6em 0em; 
+}
+.kkfc-btn{
+	background-color:#d7242a ;
+	color: #fff;
+	padding: 1em;
+	border-radius: 5px;
+}
+.kkfc-btn:hover{
+	background-color: #8a0c10;
+}
+
+/*remove blur effect due to bootstrap 4 slider */
+
+.carousel-item {
+    -webkit-backface-visibility: unset!important;
+    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: unset!important;
+    font-smoothing:antialiased;
+}
+
+
+/*styling mobile menu */
+.mobile-menu{
+	display: none;
+	position: relative;
+	z-index: 99;
+}
+#topMenu{
+	padding: 10px 0px;
+	background-color:#0c0909;
+	text-transform: uppercase;
+}
+#topMenu ul{
+	padding: 20px 75px;
+}
+#topMenu ul li{
+	padding: 20px 0px;
+	border-bottom: 1px solid #ffffff4a;
+}
+#topMenu ul li a,#topMenu ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu-toggler{
+	float: right;
+	font-size: 24px;
+	position: absolute;
+	right: 40px;
+	top:30px;
+	color:#fff;
+}
+.menu-toggler:hover{
+	cursor: pointer;
+}
+.cart{
+	float: right;
+	font-size: 24px;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	color:#fff;
+}
+
+
+
+/*styling start-order-module */
+
+.start-order-module{
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	top: 94px;
+	z-index: 51;
+	width: 100%;
+	background-color: #fff;
+	font-family: oswald;
+	border-bottom: solid 1px #960a0a4a;
+}
+.start-order-module a{
+	display: inline-block;
+}
+
+.start-order-heading{
+	background-color: #fff;
+	font-size: 40px;
+	margin-right: 1.5em;
+	position: relative;
+	top:-5px;
+}
+.delivery-btn{
+	background-color: #d7242a;
+	
+}
+.pickup-btn{
+	background-color: #006991;
+			
+}
+.pickup-btn,.delivery-btn{
+	width: 130px;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+.or-div{
+	display: inline-block;
+    position: relative;
+   	bottom: 15px;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin:0px 20px;
+}
+
+/* styling main content*/
+
+main{
+	margin-top: 187px;
+}
+
+
+
+/*styling slider*/
+.slider{
+	justify-content: center;
+    background-color: #731313;
+}
+
+/*foodSlider- small slider below about KKFC */
+#foodSlider .carousel-indicators li{
+	background-color: #fff;
+	border: 2px solid #9e9e9e7d;
+	top: 55px;
+    width: 10px;
+    height: 10px;
+    margin: 0px 10px;
+}
+#foodSlider .carousel-indicators .active{
+	border: 2px solid #d7242a;
+}
+
+/*styling special offers section */
+
+#specialOffers>span:after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 75%;
+	background-color: #9e9e9e40;
+}
+
+
+
+/*styling menu */
+
+.tabpanel {
+	background-color: #f9f9f9;
+}
+.tabpanel .row .col-sm-3{
+	padding: 0px 5px;
+}
+.tabpanel .card .card-body{
+	padding: 10px 0px 0px 0px;
+}
+.tabpanel .card .card-body .order-now-btn{
+	display: block;
+	border-radius: 0;
+	font-size: 14px;
+	background-color: #d7242a;
+	color: #fff;
+}
+.tabpanel .card .card-body .order-now-btn:hover{
+	background-color:#8a0a0e;
+	cursor: pointer;
+}
+.tabpanel ul li{
+
+	background-color:#d7242a; 
+	border-bottom: 1px solid #fff;
+}
+.tabpanel ul li a{
+	color: #fff;
+	padding: 10px;
+	display: block;
+}
+
+.tab-content{
+	background-color: #f9f9f9;
+	padding: 5px;
+}
+
+.tabpanel ul li:hover{
+	background-color:#8a0a0e;
+	cursor: pointer;
+}	
+.hide{
+	display: none;
+}
+.card{
+	border:none;
+}
+.card-text,.card-title{
+	font-size: 14px;
+	color: #444444;
+}
+
+/*styling single product details page */
+
+.product-detail{
+	background-color: #f9f9f9;
+}
+
+/*styling footer*/
+footer{
+	
+	padding: 5em 0em;
+	background-color: #2e3033;
+	font-weight: 400;
+}
+footer ul {
+	padding: 0px;
+	margin: 5px 5px 5px 0px;
+}
+footer ul li{
+	padding-bottom: 10px;
+}
+footer h6{
+	color: #fff;
+	position: relative;
+	margin-bottom: 2.5em;
+}
+footer h6:after,footer h6:before{
+	content: "";
+	display: block;
+ 	position: absolute;
+	width: 70px;
+	height: 1px;
+	bottom: -15px;
+	background-color: #dc3522;
+}
+footer h6:after{
+	left: 10px;
+	bottom: -18px;
+}
+footer a {
+	color: #777;
+}
+footer a:hover{
+	color: #fff;
+}
+footer a, footer a:hover{
+	text-decoration:none;
+}
+
+
+/*media queries for responsiveness */
+
+@media only screen and (max-width: 900px){
+	.mobile-menu{
+		display: block;
+	}
+	.menu{
+		display: none;
+		}
+	}
+@media only screen and (max-width: 768px){
+	.start-order-heading{
+		display: block;
+		margin:0;
+		font-size: 24px;
+		}
+	.or-div{
+		margin: 0;
+		z-index: 10;
+		}
+	.pickup-btn,.delivery-btn{
+		border-radius: 0;
+		font-size: 16px;
+		position: relative;
+		}
+	.pickup-btn{
+		left: -20px;
+		}
+	.delivery-btn{
+		right: -20px;
+		}
+	}
