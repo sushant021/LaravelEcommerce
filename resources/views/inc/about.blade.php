@@ -4,7 +4,7 @@
 		
 		<div class="col-sm-6">
 
-			<article style="margin-bottom: 5em;">
+			<article style="margin-bottom: 5em;" id= "about-kkfc">
 
 				<h2 class="mb-3">About KKFC</h2>
 

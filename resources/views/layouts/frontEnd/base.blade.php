@@ -22,6 +22,8 @@
 
 	<link href="{{ asset('assets/css/mainstyle.css') }}" rel="stylesheet">
 
+	<script src="{{asset('assets/js/esewa-payment.js')}}"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
@@ -114,7 +116,6 @@
 					<h6>ABOUT US</h6>
 					<ul>
 						<li><a href="contact-us">CONTACT US</a></li>
-						<li><a href="our-branches">OUR BRANCHES</a></li>
 						<li><a href="privacy-policy">PRIVACY POLICY</a></li>
 					</ul>
 					

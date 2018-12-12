@@ -6,7 +6,7 @@
 
   <div class="container text-center section-container">
   		
-  		<h3 class="py-3">Order has been successfully placed.</h3>
+  		<h3 class="p-3">Franchise Request has been successfully sent.</h3>
   		<a href="/" class="kkfc-btn">Return To Homepage</a>
 
 

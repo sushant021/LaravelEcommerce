@@ -32,7 +32,7 @@
 
 		<div class=" container mb-5 contact-form">
 
-			<h3>Regular Orders </h3>
+			<h3>Your Orders </h3>
 
 			@if(count($cart_content)>0)
 
@@ -125,14 +125,10 @@
 			@endif
 
 
-
-			
-			
-			
+		
 		</div>
 
 		
-
 		<div class=" container p-3">
 
 			<a class="kkfc-btn" href="/clear-cart">Clear Cart</a>

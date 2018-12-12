@@ -3,13 +3,23 @@ html{
 	height: 100%;
 	box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body{
 	position: relative;
 	font-size: 13px;
 	font-family: arial;
 	margin:0;
-	
+	min-height: 100%;
 	line-height: 30px !important;
+}
+main{
+	padding-bottom: 25em;
 }
 a,a:hover{
 	text-decoration: none;
@@ -333,7 +343,10 @@ main{
 
 /*styling footer*/
 footer{
-	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	padding: 5em 0em;
 	background-color: #2e3033;
 	font-weight: 400;
@@ -440,7 +453,7 @@ footer a, footer a:hover{
 
 .payment-gateway-section{
 	padding: 20px;
-	border: 1px solid rgb(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
 	text-align: center;
 }
 .payment-form{
@@ -484,4 +497,24 @@ footer a, footer a:hover{
 	.delivery-btn{
 		right: -20px;
 		}
+	#homepageCarousel,#foodSlider{
+		display: none;
+		}
+
+	body{
+		padding-bottom: 35em;
+		
 	}
+	#about-kkfc{
+		margin-bottom: 0!important;
+		padding-top: 10em;
+	}
+	}
+@media only screen and (max-width: 468px){
+	.start-order-heading{
+		font-size: 18px;
+	}
+	#homepageCarousel,#foodSlider{
+		display: none;
+		}
+}

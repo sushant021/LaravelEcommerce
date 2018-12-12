@@ -117,7 +117,7 @@
 				
 				<div class="col-sm-12 col-lg-6 col-xl-6 col-md-6">
 					
-
+					
 					<section class="payment-gateway-section">
 
 						<img src="/storage/site-images/esewa_logo.png" class="img-fluid" width="150px">
@@ -131,12 +131,21 @@
 						    <input value="0" name="pdc" type="hidden">
 						    <input value="esewa_kkfc" name="scd" type="hidden">
 						    <input value="{{session('orderId')}}" name="pid" type="hidden">
-						    <input value="http://localhost:8000/esewa-payment-success" type="hidden" name="su">
-						    <input value="http://localhost:8000/esewa-payment-failed" type="hidden" name="fu">
+						    <input value="http://localhost:8000/esewa-payment-success?q=su" type="hidden" name="su">
+						    <input value="http://localhost:8000/esewa-payment-failed?q=fu" type="hidden" name="fu">
 						    <input value="Pay With eSewa" type="submit" class="kkfc-btn payment-btn">
 				    	</form>
 				    	
 					</section>
+					{{--
+					<section class="payment-gateway-section">
+						
+						<img src="/storage/site-images/esewa_logo.png" class="img-fluid" width="150px">
+
+						<button class="kkfc-btn" onclick="post();">Pay With esewa</button>
+
+					</section>
+					--}}
 
 
 				</div>

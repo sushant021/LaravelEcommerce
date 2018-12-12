@@ -1,3 +1,4 @@
+
 @extends('layouts.frontEnd.base')
 
 @if(session('orderType') == '')
@@ -8,16 +9,28 @@
 
 	@endsection
 
+	@section('content')
+
+  		@include('inc.slider')
+
+  		@include('inc.about')
+
+  		@include('inc.menu')
+
+	@endsection
+
 
 @endif
-
+<div style="margin-top: -90px;">
 @section('content')
 
-  @include('inc.slider')
+  		@include('inc.slider')
 
-  @include('inc.about')
+  		@include('inc.about')
 
-  @include('inc.menu')
+  		@include('inc.menu')
 
 @endsection
+
+</div>
 

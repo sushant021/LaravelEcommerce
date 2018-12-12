@@ -16,7 +16,7 @@
 
             <p>Please fill in the details below and drop us a message if you want to open a KKFC outlet yourself. </p>
 
-            {!! Form::open(['action' => 'FrontendController@franchisingPage','method'=>'POST','enctype'=>'multipart/form-data']) !!}
+            {!! Form::open(['action' => 'FranchiseController@receiveFranchise','method'=>'POST','enctype'=>'multipart/form-data']) !!}
                 
                 <div class="form-group">
                     

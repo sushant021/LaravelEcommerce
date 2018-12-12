@@ -2,28 +2,25 @@
 
 namespace App\Mail;
 
-use Cart;
-
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class OrderReceivedEmail extends Mailable
+class bookingReceivedMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    
-
+    public $bookingData;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct($bookingData)
+    {   
         //
-        
+        $this->bookingData = $bookingData;
     }
 
     /**
@@ -33,8 +30,6 @@ class OrderReceivedEmail extends Mailable
      */
     public function build()
     {
-        
-        $cart_content = Cart::content();
-        return $this->view('emails.orderReceived')->with('cart_content',$cart_content);
+        return $this->view('emails.tableBooking')->with('bookingData',$this->bookingData);
     }
 }

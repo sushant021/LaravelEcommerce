@@ -31,7 +31,7 @@
 
 						<h3 class="section-header">SEND MESSAGE</h3>
 						
-						{!! Form::open(['action' => 'FrontendController@franchisingPage','method'=>'POST','enctype'=>'multipart/form-data']) !!}
+						{!! Form::open(['action' => 'ContactController@receiveMessage','method'=>'POST','enctype'=>'multipart/form-data']) !!}
 	    	
 				    	<div class="form-group">
 				    		{{Form::text('name','',['class'=>'form-control','placeholder'=>'Name'])}}

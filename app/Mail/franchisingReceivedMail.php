@@ -2,28 +2,26 @@
 
 namespace App\Mail;
 
-use Cart;
-
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class OrderReceivedEmail extends Mailable
+class franchisingReceivedMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    
+    public $franchiseeData;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($franchiseeData)
     {
         //
-        
+        $this->franchiseeData = $franchiseeData;
     }
 
     /**
@@ -33,8 +31,7 @@ class OrderReceivedEmail extends Mailable
      */
     public function build()
     {
-        
-        $cart_content = Cart::content();
-        return $this->view('emails.orderReceived')->with('cart_content',$cart_content);
+
+        return $this->view('emails.franchisingRequest')->with('franchiseeData',$this->franchiseeData);
     }
 }

@@ -14,7 +14,7 @@
             
             <h3>Book A Table In KKFC </h3>
 
-            {!! Form::open(['action' => 'FrontendController@franchisingPage','method'=>'POST','enctype'=>'multipart/form-data']) !!}
+            {!! Form::open(['action' => 'BookTableController@receiveOrder','method'=>'POST','enctype'=>'multipart/form-data']) !!}
                 
                 <div class="form-group">
                     
@@ -35,6 +35,13 @@
                     {{Form::select('location', ["People's Plaza, New Road"=>"People's Plaza, New Road","Civil Mall, Sundhara"=>"Civil Mall, Sundhara", "Maitidevi Chowk"=>"Maitidevi Chowk" ], "People's Plaza, New Road",['class'=>'form-control']) }}
 
                 </div>
+
+                 <div class="form-group">
+                    
+                    {{Form::text('booking_date_time','',['class'=>'form-control','placeholder'=>'Date and Time of arrival'])}}
+
+                </div>
+
 
                 <div class="form-group">
                     
